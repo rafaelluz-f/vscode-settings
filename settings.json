@@ -1,0 +1,41 @@
+{
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "php.validate.enable": true,
+  "php.suggest.basic": false,
+  "php.validate.executablePath": "C:/wamp64/bin/php/php7.0.10/php.exe",
+  "php.validate.run": "onSave",
+  "editor.formatOnPaste": true,
+  "workbench.colorTheme": "Night Owl",
+  "eslint.run": "onSave",
+  "editor.formatOnSave": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.php$",
+        "cmd": "prettier ${file} --write --print-width 200 --tab-width 4 --single-quote"
+      }
+    ]
+  },
+  "window.zoomLevel": 0,
+  "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": ["/k C:\\cmder\\vendor\\init.bat"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 13,
+  "bracketPairColorizer.forceIterationColorCycle": true,
+  "powermode.enabled": true,
+  "prettier.proseWrap": "always",
+  "prettier.arrowParens": "always",
+  "prettier.trailingComma": "es5",
+  "npm-intellisense.importES6": true,
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.importLinebreak": ";\r\n",
+  "npm-intellisense.importDeclarationType": "const",
+  "workbench.iconTheme": "file-icons"
+}

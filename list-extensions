@@ -1,0 +1,31 @@
+//command to run
+code --list-extensions
+//
+
+alefragnani.project-manager
+bigous.vscode-multi-line-tricks
+bmewburn.vscode-intelephense-client
+bradgashler.htmltagwrap
+christian-kohler.npm-intellisense
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dzannotti.vscode-babel-coloring
+eamodio.gitlens
+emeraldwalk.RunOnSave
+esbenp.prettier-vscode
+file-icons.file-icons
+formulahendry.auto-rename-tag
+formulahendry.code-runner
+gamunu.vscode-yarn
+hoovercj.vscode-power-mode
+letrieu.expand-region
+michelemelluso.code-beautifier
+ms-vscode.cpptools
+ms-vscode.sublime-keybindings
+phiter.phpstorm-snippets
+sdras.night-owl
+shardulm94.trailing-spaces
+sleistner.vscode-fileutils
+streetsidesoftware.code-spell-checker
+wayou.vscode-todo-highlight
+xabikos.JavaScriptSnippets
