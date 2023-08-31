@@ -1,54 +1,90 @@
 {
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.showSuggestionsAsSnippets": true,
-    "editor.snippetSuggestions": "top",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "php.validate.enable": true,
-    "php.suggest.basic": false,
-    "php.validate.executablePath": "C:/wamp64/bin/php/php7.0.10/php.exe",
-    "php.validate.run": "onSave",
-    "editor.formatOnPaste": true,
-    "workbench.colorTheme": "Night Owl",
-    "eslint.run": "onSave",
-    "editor.formatOnSave": true,
-    "emeraldwalk.runonsave": {
-      "commands": [
-        {
-          "match": "\\.php$",
-          "cmd": "prettier ${file} --write --print-width 200 --tab-width 4 --single-quote"
+  "material-icon-theme.activeIconPack": "nest",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?", //let me get $words
+  "editor.tokenColorCustomizations": {
+    //activate italic fonts
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italics (=Pacifico)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          //"support.class.builtin.js", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "storage.type.function.js", // function keyword
+          "storage.type.js", // Variable declarations
+          "keyword.control.import.js", // Imports
+          "keyword.control.from.js", // From-Keyword
+          //"entity.name.type.js", // new … Expression
+          "keyword.control.flow.js", // await
+          "keyword.control.conditional.js", // if
+          "keyword.control.loop.js", // for
+          "keyword.operator.new.js" // new
+        ],
+        "settings": {
+          "fontStyle": "italic"
         }
-      ]
-    },
-    "window.zoomLevel": 0,
-    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
-    "terminal.integrated.shellArgs.windows": ["/k C:\\cmder\\vendor\\init.bat"],
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "Dank Mono",
-    "editor.fontSize": 13,
-    "bracketPairColorizer.forceIterationColorCycle": true,
-    "powermode.enabled": true,
-    "prettier.proseWrap": "always",
-    "prettier.arrowParens": "always",
-    "prettier.trailingComma": "es5",
-    "npm-intellisense.importES6": true,
-    "npm-intellisense.importQuotes": "'",
-    "npm-intellisense.importLinebreak": ";\r\n",
-    "npm-intellisense.importDeclarationType": "const",
-    "workbench.iconTheme": "file-icons",
-    "workbench.colorTheme": "Night Owl",
-    "workbench.colorCustomizations": {
-      "[Night Owl]": {
-        "activityBar.background": "#000C1D",
-        "activityBar.border": "#102a44",
-        "sideBar.background": "#001122",
-        "sideBar.border": "#102a44",
-        "sideBar.foreground": "#8BADC1"
       },
-    },
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "workbench.panel.defaultLocation": "right",
-    "prettier.singleQuote": true,
-  }
+      {
+        "scope": [
+          //following will be excluded from italics (My theme (Monokai dark) has some defaults I don't want to be in italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "entity.name.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#000c1d",
+    "activityBar.border": "#102a44",
+    "sideBar.background": "#001122",
+    "sideBar.border": "#102a44",
+    "sideBar.foreground": "#8BADC1",
+    "statusBar.background": "#071727",
+    "editor.background": "#001122",
+    "editorGutter.background": "#001122",
+    "panel.background": "#041526",
+    "terminal.background": "#001122",
+    "sideBarSectionHeader.background": "#00162c",
+    "editorGroupHeader.tabsBackground": "#00162c",
+    "tab.activeBackground": "#00162c",
+    "tab.activeForeground": "#ffffff",
+    "tab.inactiveBackground": "#00162c",
+    "tab.inactiveForeground": "#fff",
+    "statusBar.debuggingBackground": "#001121",
+    "statusBar.debuggingForeground": "#fff",
+    "titleBar.activeBackground": "#000d1a",
+    "activityBar.foreground": "#a6c5e4",
+    "activityBarBadge.foreground": "#000",
+    "activityBar.inactiveForeground": "#a6c5e4",
+    "editor.foreground": "#cecece"
+  },
+  "git.autofetch": false, //avoid vscode on windows to open a handler window asking how we are going to push
+  "terminal.integrated.defaultProfile.windows": "Cmder",
+  "terminal.integrated.profiles.windows": {
+    "Cmder": {
+      "name": "Cmder",
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": ["/k", "${env:cmder_root}\\vendor\\bin\\vscode_init.cmd"],
+      "icon": "terminal-cmd",
+      "color": "terminal.ansiGreen"
+    }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
