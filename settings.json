@@ -27,7 +27,7 @@
           "keyword.operator.new.js" // new
         ],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": "italic bold"
         }
       },
       {
