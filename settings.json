@@ -2,7 +2,7 @@
   "material-icon-theme.activeIconPack": "nest",
   "editor.fontFamily": "Dank Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 12,
   "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?", //let me get $words
   "editor.tokenColorCustomizations": {
     //activate italic fonts
@@ -72,6 +72,10 @@
     "activityBar.inactiveForeground": "#a6c5e4",
     "editor.foreground": "#cecece"
   },
+  "editor.cursorWidth": 2,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "block",
+  "terminal.integrated.cursorBlinking": true,
   "git.autofetch": false, //avoid vscode on windows to open a handler window asking how we are going to push
   "terminal.integrated.defaultProfile.windows": "Cmder",
   "terminal.integrated.profiles.windows": {
