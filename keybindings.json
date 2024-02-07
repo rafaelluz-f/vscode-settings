@@ -1,35 +1,83 @@
-// Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to override the defaults
 [
   {
-    "key": "shift+alt+w",
-    "command": "extension.htmlTagWrap",
+    "key": "cmd+i",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+cmd+2",
+    "command": "workbench.action.splitEditorToRightGroup"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+o",
+    "command": "-editor.action.organizeImports",
+    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+tab",
-    "command": "workbench.action.nextEditor"
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+shift+tab",
-    "command": "workbench.action.previousEditor"
+    "key": "cmd+k cmd+a",
+    "command": "editor.action.duplicateSelection"
   },
   {
-    "key": "ctrl+shift+e",
-    "command": "editor.action.formatDocument",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "cmd+k w",
+    "command": "extension.htmlTagWrap"
   },
   {
-    "key": "ctrl+shift+alt+a",
-    "command": "expand_region",
+    "key": "cmd+k r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k i",
+    "command": "editor.action.organizeImports",
+    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  },
+  {
+    "key": "cmd+k shift+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+alt+z",
-    "command": "undo_expand_region",
-    "when": "editorTextFocus && editorHasSelection"
+    "key": "cmd+k g",
+    "command": "workbench.action.gotoLine"
   },
   {
-    "key": ".",
-    "command": ""
+    "key": "cmd+k /",
+    "command": "git.openFile",
+    "when": "editorFocus && isInDiffEditor"
+  },
+  {
+    "key": "cmd+k shift+/",
+    "command": "git.openChange",
+    "when": "editorFocus && !isInDiffEditor"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k shift+e",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
   }
 ]
